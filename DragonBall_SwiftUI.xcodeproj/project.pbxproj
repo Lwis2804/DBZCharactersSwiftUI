@@ -14,6 +14,10 @@
 		AA9F1F3E2C8BFE130078A805 /* DragonBall_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F3D2C8BFE130078A805 /* DragonBall_SwiftUITests.swift */; };
 		AA9F1F482C8BFE140078A805 /* DragonBall_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F472C8BFE140078A805 /* DragonBall_SwiftUIUITests.swift */; };
 		AA9F1F4A2C8BFE140078A805 /* DragonBall_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F492C8BFE140078A805 /* DragonBall_SwiftUIUITestsLaunchTests.swift */; };
+		AA9F1F582C8BFE2B0078A805 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F572C8BFE2B0078A805 /* NetworkManager.swift */; };
+		AA9F1F5B2C8C007D0078A805 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F5A2C8C007D0078A805 /* CharacterResponse.swift */; };
+		AA9F1F5D2C8C028D0078A805 /* ErrorWebService .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F5C2C8C028D0078A805 /* ErrorWebService .swift */; };
+		AA9F1F602C8FD8DE0078A805 /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F5F2C8FD8DE0078A805 /* DBViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		AA9F1F432C8BFE140078A805 /* DragonBall_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBall_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9F1F472C8BFE140078A805 /* DragonBall_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBall_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		AA9F1F492C8BFE140078A805 /* DragonBall_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBall_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA9F1F572C8BFE2B0078A805 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA9F1F5A2C8C007D0078A805 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		AA9F1F5C2C8C028D0078A805 /* ErrorWebService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorWebService .swift"; sourceTree = "<group>"; };
+		AA9F1F5F2C8FD8DE0078A805 /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,9 @@
 		AA9F1F202C8BFE0D0078A805 = {
 			isa = PBXGroup;
 			children = (
+				AA9F1F5E2C8FD8C30078A805 /* DBViewModel */,
+				AA9F1F592C8C00680078A805 /* CharacterResponse */,
+				AA9F1F562C8BFE190078A805 /* NetworkManager */,
 				AA9F1F2B2C8BFE0D0078A805 /* DragonBall_SwiftUI */,
 				AA9F1F3C2C8BFE130078A805 /* DragonBall_SwiftUITests */,
 				AA9F1F462C8BFE140078A805 /* DragonBall_SwiftUIUITests */,
@@ -125,6 +136,31 @@
 				AA9F1F492C8BFE140078A805 /* DragonBall_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = DragonBall_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		AA9F1F562C8BFE190078A805 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				AA9F1F572C8BFE2B0078A805 /* NetworkManager.swift */,
+				AA9F1F5C2C8C028D0078A805 /* ErrorWebService .swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		AA9F1F592C8C00680078A805 /* CharacterResponse */ = {
+			isa = PBXGroup;
+			children = (
+				AA9F1F5A2C8C007D0078A805 /* CharacterResponse.swift */,
+			);
+			path = CharacterResponse;
+			sourceTree = "<group>";
+		};
+		AA9F1F5E2C8FD8C30078A805 /* DBViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA9F1F5F2C8FD8DE0078A805 /* DBViewModel.swift */,
+			);
+			path = DBViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9F1F582C8BFE2B0078A805 /* NetworkManager.swift in Sources */,
 				AA9F1F2F2C8BFE0D0078A805 /* ContentView.swift in Sources */,
+				AA9F1F602C8FD8DE0078A805 /* DBViewModel.swift in Sources */,
+				AA9F1F5B2C8C007D0078A805 /* CharacterResponse.swift in Sources */,
+				AA9F1F5D2C8C028D0078A805 /* ErrorWebService .swift in Sources */,
 				AA9F1F2D2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
