@@ -22,8 +22,8 @@ struct ContentView: View {
                 LazyVGrid(columns: numberOfColumns, spacing: 10) {
                     ForEach(viewModel.characters, id: \.id) { dbChar in
                         VStack{
-                            Text(dbChar.name)
-                            Text(dbChar.image)
+                            NavigationLink( destination: DBCharacterDetailView(viewModel: viewModel, dbChar: dbChar)){ DBCharacterCellView(dbCharacter: dbChar, viewModel: viewModel)
+                            }
                         }
                     }
                 }

@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct DBCharacterCellView: View {
+    
+    let dbCharacter : DBZCharacter
+    @StateObject var viewModel : DBViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Rectangle()
+                .foregroundColor(.orange)
+                .cornerRadius(25)
+            VStack{
+                ImageCharacterView(url: dbCharacter.image, width: 90, height: 170)
+                Text(dbCharacter.name)
+                    .font(.title2)
+                    .foregroundColor(.white)
+            }
+        }
     }
 }
 
 #Preview {
-    DBCharacterCellView()
+    DBCharacterCellView(dbCharacter: MockData.dbCharacters[1], viewModel: DBViewModel())
 }

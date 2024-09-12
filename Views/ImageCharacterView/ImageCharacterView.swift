@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ImageCharacterView: View {
     
@@ -14,10 +15,12 @@ struct ImageCharacterView: View {
     let height : CGFloat
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        KFImage(URL(string: url))
+            .resizable()
+            .frame(width: width, height: height)
     }
 }
 
 #Preview {
-    ImageCharacterView()
+    ImageCharacterView(url: MockData.dbCharacters[0].image, width: 100, height: 150)
 }

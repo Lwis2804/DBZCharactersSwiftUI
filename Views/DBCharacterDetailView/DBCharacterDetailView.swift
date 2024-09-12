@@ -8,11 +8,60 @@
 import SwiftUI
 
 struct DBCharacterDetailView: View {
+    
+    @State private var isAnimating = false
+    @StateObject var viewModel : DBViewModel
+    
+    let dbChar : DBZCharacter
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack(spacing : 18){
+                ZStack{
+                    // GIF
+                    
+                    VStack{
+                        ImageCharacterView(url: dbChar.image, width: 140, height: 230)
+                            .shadow(radius: 12)
+                            .scaleEffect(isAnimating ? 1.2 : 0.7)
+                            .padding(.top, 40 )
+                        
+                        Text(dbChar.name)
+                            .font(.largeTitle)
+                            .foregroundColor(Color("TextColor"))
+                    }
+                }
+                
+                Text(dbChar.description)
+                    .font(.footnote)
+                
+                // TANSFROMACIONES
+                
+                HStack{
+                    Text(" ki \(dbChar.ki)")
+                    
+                    Text(" Maxki \(dbChar.maxKi)")
+                        .foregroundStyle(.gray)
+                }
+                .font(.caption)
+                .padding(24)
+                
+                HStack{
+                    Text(dbChar.race)
+                        .foregroundColor(.red)
+                    
+                    Text("-")
+                    
+                    Text(dbChar.affiliation)
+                        .font(.subheadline)
+                }
+                .font(.caption)
+                .padding(24)
+            }
+            .padding()
+        }
     }
 }
 
 #Preview {
-    DBCharacterDetailView()
+    DBCharacterDetailView(viewModel: DBViewModel(), dbChar: MockData.dbCharacters[1])
 }
