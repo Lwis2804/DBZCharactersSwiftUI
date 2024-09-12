@@ -56,8 +56,16 @@ struct DBCharacterDetailView: View {
                 }
                 .font(.caption)
                 .padding(24)
-            }
+                
+            } // Vstack
             .padding()
+            .onAppear(){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+                    withAnimation{
+                        isAnimating = true
+                    }
+                }
+            }
         }
     }
 }
