@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AA5218802C92A94300C5EEBB /* DBCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52187F2C92A94300C5EEBB /* DBCharacterDetailView.swift */; };
+		AA5218832C9368FD00C5EEBB /* GifWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5218822C9368FD00C5EEBB /* GifWebView.swift */; };
+		AA5218862C937CFC00C5EEBB /* fondo.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA5218842C937CFC00C5EEBB /* fondo.gif */; };
+		AA5218872C937CFC00C5EEBB /* fondo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA5218852C937CFC00C5EEBB /* fondo2.gif */; };
 		AA9F1F2D2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F2C2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift */; };
 		AA9F1F2F2C8BFE0D0078A805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F1F2E2C8BFE0D0078A805 /* ContentView.swift */; };
 		AA9F1F312C8BFE130078A805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9F1F302C8BFE130078A805 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		AA52187F2C92A94300C5EEBB /* DBCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCharacterDetailView.swift; sourceTree = "<group>"; };
+		AA5218822C9368FD00C5EEBB /* GifWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifWebView.swift; sourceTree = "<group>"; };
+		AA5218842C937CFC00C5EEBB /* fondo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fondo.gif; path = ../../DragonBallApp/DragonBallApp/fondo.gif; sourceTree = "<group>"; };
+		AA5218852C937CFC00C5EEBB /* fondo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fondo2.gif; path = ../../DragonBallApp/DragonBallApp/fondo2.gif; sourceTree = "<group>"; };
 		AA9F1F292C8BFE0D0078A805 /* DragonBall_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBall_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9F1F2C2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBall_SwiftUIApp.swift; sourceTree = "<group>"; };
 		AA9F1F2E2C8BFE0D0078A805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,14 @@
 			path = DBCharacterDetailView;
 			sourceTree = "<group>";
 		};
+		AA5218812C9368E400C5EEBB /* GifWebView */ = {
+			isa = PBXGroup;
+			children = (
+				AA5218822C9368FD00C5EEBB /* GifWebView.swift */,
+			);
+			path = GifWebView;
+			sourceTree = "<group>";
+		};
 		AA9F1F202C8BFE0D0078A805 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,8 @@
 				AA9F1F2C2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift */,
 				AA9F1F2E2C8BFE0D0078A805 /* ContentView.swift */,
 				AA9F1F302C8BFE130078A805 /* Assets.xcassets */,
+				AA5218842C937CFC00C5EEBB /* fondo.gif */,
+				AA5218852C937CFC00C5EEBB /* fondo2.gif */,
 				AA9F1F322C8BFE130078A805 /* Preview Content */,
 			);
 			path = DragonBall_SwiftUI;
@@ -210,6 +226,7 @@
 		AA9F1F692C8FEA660078A805 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA5218812C9368E400C5EEBB /* GifWebView */,
 				AA52187C2C92A8DF00C5EEBB /* DBCharacterDetailView */,
 				AA9F1F6D2C8FEE830078A805 /* DBCharacterCellView */,
 				AA9F1F622C8FE43A0078A805 /* ImageCharacterView */,
@@ -343,7 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5218862C937CFC00C5EEBB /* fondo.gif in Resources */,
 				AA9F1F342C8BFE130078A805 /* Preview Assets.xcassets in Resources */,
+				AA5218872C937CFC00C5EEBB /* fondo2.gif in Resources */,
 				AA9F1F312C8BFE130078A805 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +397,7 @@
 				AA9F1F682C8FEA4A0078A805 /* MockData.swift in Sources */,
 				AA9F1F5D2C8C028D0078A805 /* ErrorWebService .swift in Sources */,
 				AA9F1F2D2C8BFE0D0078A805 /* DragonBall_SwiftUIApp.swift in Sources */,
+				AA5218832C9368FD00C5EEBB /* GifWebView.swift in Sources */,
 				AA9F1F702C8FEEAA0078A805 /* DBCharacterCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
