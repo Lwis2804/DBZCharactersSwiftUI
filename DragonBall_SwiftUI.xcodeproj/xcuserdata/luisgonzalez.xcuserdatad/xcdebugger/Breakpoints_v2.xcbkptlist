@@ -7,93 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A2D225F2-691A-4AEC-91F0-0D963F8A9256"
+            uuid = "F66B0F08-A66C-4658-A14E-06A0588DEAF4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Views/GifWebView/GifWebView.swift"
+            filePath = "NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "updateUIView(_:context:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getDetailOfCharacters(numberOfCharacter:completed:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A2D225F2-691A-4AEC-91F0-0D963F8A9256 - 7c9d4b1c5fee87a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DragonBall_SwiftUI.GifWebView.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;DragonBall_SwiftUI.GifWebView&gt;) -&gt; ()"
-                  moduleName = "DragonBall_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luisgonzalez/Desktop/DragonBall_SwiftUI/Views/GifWebView/GifWebView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-               <Location
-                  uuid = "A2D225F2-691A-4AEC-91F0-0D963F8A9256 - 7c9d4b1c5fee87a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DragonBall_SwiftUI.GifWebView.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;DragonBall_SwiftUI.GifWebView&gt;) -&gt; ()"
-                  moduleName = "DragonBall_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luisgonzalez/Desktop/DragonBall_SwiftUI/Views/GifWebView/GifWebView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B7E307F5-820A-4ABA-9C0F-7A6A732FD972"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Views/GifWebView/GifWebView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "updateUIView(_:context:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B7E307F5-820A-4ABA-9C0F-7A6A732FD972 - 7c9d4b1c5fee87eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DragonBall_SwiftUI.GifWebView.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;DragonBall_SwiftUI.GifWebView&gt;) -&gt; ()"
-                  moduleName = "DragonBall_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luisgonzalez/Desktop/DragonBall_SwiftUI/Views/GifWebView/GifWebView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-               <Location
-                  uuid = "B7E307F5-820A-4ABA-9C0F-7A6A732FD972 - 14f43a2a5cd2db8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in DragonBall_SwiftUI.GifWebView.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;DragonBall_SwiftUI.GifWebView&gt;) -&gt; ()"
-                  moduleName = "DragonBall_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luisgonzalez/Desktop/DragonBall_SwiftUI/Views/GifWebView/GifWebView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
