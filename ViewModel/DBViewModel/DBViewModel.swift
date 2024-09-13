@@ -9,6 +9,7 @@ import Foundation
 
 class DBViewModel : ObservableObject {
     @Published var characters : [DBZCharacter] = []
+    @Published var detailsCharacter : CharacterDetailResponse?
     
     private let service = NetworkManager.shared // porque tengo el network.shared
     
@@ -29,6 +30,19 @@ class DBViewModel : ObservableObject {
                 }
             }
             
+        }
+    }
+    
+    func getDetails(numberCharacter: Int) {
+        service.getDetailOfCharacters(numberOfCharacter: numberCharacter) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let detailsCharacter):
+                    self?.detailsCharacter = detailsCharacter
+                case .failure(let error):
+                    print("Debug : error \(error) ")
+                }
+            }
         }
     }
 }

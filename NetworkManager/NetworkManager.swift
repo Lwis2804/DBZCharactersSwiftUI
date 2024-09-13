@@ -69,18 +69,9 @@ class NetworkManager : NSObject, ObservableObject {
             }catch {
                 print("Debug: error \(error.localizedDescription)")
                 completed(.failure(.wrongJson))
-                
             }
-            
-            
-            
-            
         }
-        
+        task.resume()
     }
-    
-    
-    
-    
 }
 
