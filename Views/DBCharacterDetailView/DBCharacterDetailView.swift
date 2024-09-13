@@ -36,7 +36,28 @@ struct DBCharacterDetailView: View {
                 Text(dbChar.description)
                     .font(.footnote)
                 
-                // TANSFROMACIONES
+                if let  transformation = viewModel.detailsCharacter?.transformations {
+                    if !transformation.isEmpty {
+                        Text("Transformacione")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.red)
+                    }
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 12.0) {
+                            ForEach(transformation) { transformation in
+                                VStack {
+                                    ImageCharacterView(url: transformation.image, width: 70, height: 120)
+                                    Text(transformation.name)
+                                        .lineLimit(1)
+                                        .font(.footnote)
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                
                 
                 HStack{
                     Text(" ki \(dbChar.ki)")
@@ -61,7 +82,8 @@ struct DBCharacterDetailView: View {
                 
             } // Vstack
             .padding()
-            .onAppear(){
+            .onAppear {
+                viewModel.getDetails(numberCharacter: dbChar.id)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
                     withAnimation{
                         isAnimating = true
