@@ -38,7 +38,7 @@ struct DBCharacterDetailView: View {
                 
                 if let  transformation = viewModel.detailsCharacter?.transformations {
                     if !transformation.isEmpty {
-                        Text("Transformacione")
+                        Text("Transformaciones")
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .foregroundStyle(.red)
@@ -82,7 +82,7 @@ struct DBCharacterDetailView: View {
                 
             } // Vstack
             .padding()
-            .onAppear {
+            .onAppear  {
                 viewModel.getDetails(numberCharacter: dbChar.id)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
                     withAnimation{
