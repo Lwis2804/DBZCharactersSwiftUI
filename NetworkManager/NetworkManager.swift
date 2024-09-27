@@ -14,7 +14,7 @@ class NetworkManager : NSObject, ObservableObject {
     static let detailCharacterURL = "https://dragonball-api.com/api/characters/"
     
     func getListOfCharacters(numberPage : Int, completed : @escaping(Result<CharacterResponse, ErrorWebService>) ->  Void) {
-        guard let url = URL(string: NetworkManager.baseURL+"\(numberPage)"+"&limit=10") else {
+        guard let url = URL(string: NetworkManager.baseURL+"\(numberPage)"+"&limit=20") else {
             completed(.failure(.wrongUrl))
             return
         }

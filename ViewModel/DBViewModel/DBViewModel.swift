@@ -39,7 +39,6 @@ class DBViewModel : ObservableObject {
                 switch result {
                 case .success(let detailsCharacter):
                     self?.detailsCharacter = detailsCharacter
-                   
                 case .failure(let error):
                     print("Debug : error \(error) ")
                     print(self?.detailsCharacter as Any)
